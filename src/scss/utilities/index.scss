@@ -1,0 +1,72 @@
+// Create color utility classes
+@each $name, $color in $colors {
+  @each $prefix-name, $property in $color-properties {
+    #{".#{$prefix-name}-#{$name}"} {
+      #{$property}: #{$color} !important;
+    }
+  }
+}
+
+// Create display utility classes
+
+@each $name, $value in $display {
+  #{".d-#{$name}"} {
+    display: #{$value} !important;
+  }
+}
+
+// Create flex utility classes
+
+@each $name, $value in $flex-direction {
+  #{".flex-#{$name}"} {
+    flex-direction: #{$value} !important;
+  }
+}
+//  create flex-wrap utility classes
+
+@each $name, $value in $flex-wrap {
+  #{".flex-#{$name}"} {
+    flex-wrap: #{$value} !important;
+  }
+}
+
+// Create justify content utility classes
+@each $name, $value in $justify-content {
+  #{".justify-content-#{$name}"} {
+    justify-content: #{$value} !important;
+  }
+}
+
+// Create align items utility classes
+@each $name, $value in $align-items {
+  #{".align-items-#{$name}"} {
+    align-items: #{$value} !important;
+  }
+}
+// Create align content utility classes
+@each $name, $value in $align-content {
+  #{".align-content-#{$name}"} {
+    align-content: #{$value} !important;
+  }
+}
+
+// Create flex grow utility classes
+@each $name, $value in $flex-grow {
+  #{".flex-grow-#{$name}"} {
+    flex-grow: #{$value} !important;
+  }
+}
+
+// Create flex shrink utility classes
+@each $name, $value in $flex-shrink {
+  #{".flex-shrink-#{$name}"} {
+    flex-shrink: #{$value} !important;
+  }
+}
+
+// Create flex basis utility classes
+@each $name, $value in $flex-basis {
+  #{".flex-basis-#{$name}"} {
+    flex-basis: #{$value} !important;
+  }
+}

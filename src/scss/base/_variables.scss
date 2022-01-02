@@ -1,0 +1,164 @@
+$colors: (
+  primary: #00bcd4,
+  secondary: #ff4081,
+  tertiary: #f44336,
+  error: #f44336,
+  success: #4caf50,
+  warning: #ff9800,
+  info: #2196f3,
+  light: #fafafa,
+  dark: #212121,
+  white: #ffffff,
+  black: #000000,
+  gray: #9e9e9e,
+  gray-light: #eeeeee,
+  gray-dark: #616161,
+  gray-darker: #424242,
+  gray-lightest: #f5f5f5,
+  gray-lighter: #e0e0e0,
+);
+
+$color-properties: (
+  text: "color",
+  bg: "background-color",
+);
+
+$margins: (
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+  xl: 32px,
+);
+
+$padding: (
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+  xl: 32px,
+);
+
+$border-radius: (
+  sm: 2px,
+  md: 4px,
+  lg: 8px,
+  xl: 16px,
+);
+
+$box-shadow: (
+  sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+  md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  lg: 0 10px 20px -1px rgba(0, 0, 0, 0.1),
+  xl: 0 20px 40px -1px rgba(0, 0, 0, 0.1),
+);
+
+$font-size: (
+  sm: 12px,
+  md: 14px,
+  lg: 16px,
+  xl: 18px,
+);
+
+$flex-direction: (
+  row: row,
+  column: column,
+);
+
+$flex-wrap: (
+  nowrap: nowrap,
+  wrap: wrap,
+  wrap-reverse: wrap-reverse,
+);
+
+$justify-content: (
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  space-between: space-between,
+  space-around: space-around,
+);
+
+$align-items: (
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline,
+);
+
+$align-content: (
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  stretch: stretch,
+  space-between: space-between,
+  space-around: space-around,
+);
+
+$align-self: (
+  auto: auto,
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline,
+);
+
+$flex-grow: (
+  0: 0,
+  1: 1,
+);
+
+$flex-shrink: (
+  0: 0,
+  1: 1,
+);
+
+$flex-basis: (
+  auto: auto,
+  0: 0,
+  1: 1,
+);
+
+$flex-order: (
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+);
+
+$list-style-type: (
+  none: none,
+  disc: disc,
+  decimal: decimal,
+);
+
+$position: (
+  static: static,
+  relative: relative,
+  absolute: absolute,
+  fixed: fixed,
+  sticky: sticky,
+);
+
+$display: (
+  none: none,
+  block: block,
+  inline: inline,
+  inline-block: inline-block,
+  flex: flex,
+  inline-flex: inline-flex,
+  table: table,
+);
+
+$width: (
+  auto: auto,
+  "50": 50%,
+  "100": 100%,
+);
