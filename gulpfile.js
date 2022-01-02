@@ -8,11 +8,11 @@ function compileSass() {
     .pipe(
       purgecss({
         content: [
-          "*.html",
-          "src/**/*.js",
-          "src/**/*ts",
-          "src/**/*.jsx",
-          "src/**/*tsx",
+          "./src/**/*.tsx",
+          "./src/**/*.ts",
+          "./src/**/*.js",
+          "./src/**/*.jsx",
+          "./*.html",
         ],
       })
     )
@@ -20,7 +20,17 @@ function compileSass() {
 }
 
 function watchSass() {
-  return watch(["src/scss/**/*.scss", "src/**/*.jsx"], compileSass);
+  return watch(
+    [
+      "src/scss/**/*.scss",
+      "./src/**/*.tsx",
+      "./src/**/*.ts",
+      "./src/**/*.js",
+      "./src/**/*.jsx",
+      "./*.html",
+    ],
+    compileSass
+  );
 }
 
 exports.default = series(compileSass, watchSass);
